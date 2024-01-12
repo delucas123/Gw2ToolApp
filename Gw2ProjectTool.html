@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gw2 Tool</title>
+        <style>
+            table {
+                width: 80%;
+                margin: 20px auto;
+                border-collapse: collapse;
+                text-align: center;
+            }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 10px;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+            header {
+                text-align: center; /* Zentriert den Text, einschließlich des Bildes */
+                background-color: #f00; /* Rote Hintergrundfarbe */
+                color: #fff; /* Weiße Textfarbe */
+                padding: 20px; /* Zusätzlicher Abstand um den Text */
+            }
+
+            header h1 {
+                font-size: 3em; /* Ändert die Schriftgröße des Titels */
+            }
+            section {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                align-items: center; /* Zentriert den Inhalt horizontal */
+                text-align: center; /* Zentriert den Text horizontal */
+            }
+            h2 {
+                margin: 20px 0; /*Abstand zur Tabelle  vom Setup Hyperlink*/
+
+            }
+            a {
+                text-decoration: none;
+                padding: 5px;
+                font-size: 1.2em;
+                display: block;
+                transition: background-color 0.3s ease;
+            }
+
+            a:hover {
+                background-color: #ddd; /* Hintergrundfarbe ändert sich beim Hover */
+            }
+
+            /* Jeder Link hat eine eindeutige Farbe */
+            a:nth-child(1) {
+                color: #ff0000; /* Guardian - Rot */
+            }
+
+            a:nth-child(2) {
+                color: #00ff00; /* Mesmer - Grün */
+            }
+
+            a:nth-child(3) {
+                color: #0000ff; /* Krieger - Blau */
+            }
+
+            a:nth-child(4) {
+                color: #ffcc00; /* Ranger - Gelb */
+            }
+
+            a:nth-child(5) {
+                color: #9900cc; /* Revenant - Lila */
+            }
+
+            a:nth-child(6) {
+                color: #ff9900; /* Ele - Orange */
+            }
+
+            a:nth-child(7) {
+                color: #663300; /* Necro - Braun */
+            }
+
+            a:nth-child(8) {
+                color: #3399ff; /* Engineer - Hellblau */
+            }
+
+            a:nth-child(9) {
+                color: #ff6666; /* Thief - Rosa */
+            }
+            p {
+                font-size: 2em; /* 2/3 der Größe der Titelüberschrift */
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 1.5em;
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>Gw2 Tool</h1>
+            <img src="C:\Users\lucas\OneDrive\Documents\NetBeansProjects\Gw2Projekt Website\src\gw2projekt\website\Gw2Image.jpg" alt="Bildbeschreibung" width="50%" height="50%">
+        </header>
+
+        <section>
+            <h2><a href="setup.html" target="_blank">Setup:</a></h2>
+
+            <table>
+                <tr>
+                    <th>Subgroup</th>
+                    <th>GruppenPlatz 1</th><!-- Leere Spalte ohne Inhalt -->
+                    <th>GruppenPlatz 2</th>
+                    <th>GruppenPlatz 3</th>
+                    <th>GruppenPlatz 4</th>
+                    <th>GruppenPlatz 5</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td><!-- comment -->
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <p>Hier gehts zu unserer Build-Sammlung der Gilde Ares:</p>
+            <table>
+                <tr>
+                    <th><a href="guardian.html"><p>Guardian</p></a></th>
+                    <th><a href="mesmer.html"><p>Mesmer</p></a></th>
+                    <th><a href="warrior.html"><p>Warrior</p></a></th>
+                </tr>
+                <tr>
+                    <th><a href="ranger.html"><p>Ranger</p></a></th>
+                    <th><a href="revenant.html"><p>Revenant</p></a></th>
+                    <th><a href="elementalist.html"><p>Elementalist</p></a></th>
+                </tr>
+                <tr>
+                    <th><a href="necromancer.html"><p>Necromancer</p></a></th>
+                    <th><a href="engineer.html"><p>Engineer</p></a></th>
+                    <th><a href="thief.html"><p>Thief</p></a></th>
+                </tr>
+            </table>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                addDropdowns();
+            });
+
+            function addDropdowns() {
+                // Selektiere alle Zellen außerhalb der ersten Zeile
+                var cells = document.querySelectorAll("table tr:not(:first-child) td:not(:first-child)");
+
+                // Iteriere durch jede Zelle und füge Dropdown-Menü hinzu
+                cells.forEach(function (cell) {
+                    var dropdown = createDropdown();
+                    cell.appendChild(dropdown);
+                });
+            }
+            function createDropdown() {
+                var dropdown = document.createElement("select");
+                // Füge Optionen zum Dropdown-Menü hinzu (kann nach Bedarf angepasst werden)
+                var options = ["HFB", "Chrono", "Block Dh", "Hscourge", "Bersi", "Reaper", "Holo", "SpB (Dmg)", "SpB(support)", "Hvindi", "Druid", "Tempest", "DpsVindi", "Mirage"];
+                options.forEach(function (optionText) {
+                    var option = document.createElement("option");
+                    option.text = optionText;
+                    dropdown.add(option);
+                });
+
+                return dropdown;
+            }
+        </script>
+        <header>
+            <button onclick="speichern()">Speichern</button>
+        </header>
+
+        <script>
+            function speichern() {
+
+                alert("Inhalte gespeichert!");
+            }
+        </script>
+    </body>
+</html>
