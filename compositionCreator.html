@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unterseite</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f2f2f2;
+            }
+
+            h2 {
+                color: #333;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            select {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+            }
+
+            #auswirkungenAnzeige {
+                margin-top: 20px;
+            }
+
+            #zusatzTabelle {
+                margin-top: 20px;
+            }
+
+            #zusatzTabelle th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Ihr Testsetup:
+            Bitte wählen sie aus dem Drop-down-Menü aus.</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Subgroup</th>
+                    <th>GruppenPlatz 1</th>
+                    <th>GruppenPlatz 2</th>
+                    <th>GruppenPlatz 3</th>
+                    <th>GruppenPlatz 4</th>
+                    <th>GruppenPlatz 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Zweite Zeile -->
+                <tr>
+                    <td>1</td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                </tr>
+                <!-- Zweite bis Siebte Zeile -->
+                <tr>
+                    <td>2</td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+                        </select></td>
+                    <td><select class="dropdown" onchange="handleDropdownChange(this)">
+                            <option value=""></option>
+                            <option value="HealFirebrand">Heal Firebrand</option>
+                            <option value="Hvindi">Hvindi</option>
+                            <option value="Druid">Druid</option>
+                            <option value="Bersi">Bersi</option>
+                            <option value="Holo">Holo</option>
+                            <option value="Mirage">Mirage</option>
+                            <option value="Hscourge">Hscourge</option>
+                            <option value="DPS Spb">DPS Spb</option>
+                            <option value="DPS Vindi">DPS Vindi</option>
+                            <option value="Chrono">Chrono</option>
+                        </select></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Auswirkungen der Auswahl:</h2>
+
+        <!-- Hier wird die Ausgabe der Auswirkungen angezeigt (Platzhalter) -->
+        <div id="auswirkungenAnzeige"></div>
+
+        <h2>Boon-Table zur oben ausgewählten Composition:</h2>
+
+        <table id="zusatzTabelle">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Stabilität</th>
+                    <th>Schutz</th>
+                    <th>Aegis</th>
+                    <th>Elan</th>
+                    <th>Eile</th>
+                    <th>Alacrity</th>
+                    <th>Resistance</th>
+                    <th>Regeneration</th>
+                    <th>Might</th>
+                    <th>Fury</th>
+                    <th>Quickness</th>
+                    <th>Resolution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td id="subgroup1_Stabilität"></td>
+                    <td id="subgroup1_Schutz"></td>
+                    <td id="subgroup1_Aegis"></td>
+                    <td id="subgroup1_Elan"></td>
+                    <td id="subgroup1_Eile"></td>
+                    <td id="subgroup1_Alacrity"></td>
+                    <td id="subgroup1_Resistance"></td>
+                    <td id="subgroup1_Regeneration"></td>
+                    <td id="subgroup1_Might"></td>
+                    <td id="subgroup1_Fury"></td>
+                    <td id="subgroup1_Quickness"></td>
+                    <td id="subgroup1_Resolution"></td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td id="subgroup2_Stabilität"></td>
+                    <td id="subgroup2_Schutz"></td>
+                    <td id="subgroup2_Aegis"></td>
+                    <td id="subgroup2_Elan"></td>
+                    <td id="subgroup2_Eile"></td>
+                    <td id="subgroup2_Alacrity"></td>
+                    <td id="subgroup2_Resistance"></td>
+                    <td id="subgroup2_Regeneration"></td>
+                    <td id="subgroup2_Might"></td>
+                    <td id="subgroup2_Fury"></td>
+                    <td id="subgroup2_Quickness"></td>
+                    <td id="subgroup2_Resolution"></td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td id="subgroup3_Stabilität"></td>
+                    <td id="subgroup3_Schutz"></td>
+                    <td id="subgroup3_Aegis"></td>
+                    <td id="subgroup3_Elan"></td>
+                    <td id="subgroup3_Eile"></td>
+                    <td id="subgroup3_Alacrity"></td>
+                    <td id="subgroup3_Resistance"></td>
+                    <td id="subgroup3_Regeneration"></td>
+                    <td id="subgroup3_Might"></td>
+                    <td id="subgroup3_Fury"></td>
+                    <td id="subgroup3_Quickness"></td>
+                    <td id="subgroup3_Resolution"></td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td id="subgroup4_Stabilität"></td>
+                    <td id="subgroup4_Schutz"></td>
+                    <td id="subgroup4_Aegis"></td>
+                    <td id="subgroup4_Elan"></td>
+                    <td id="subgroup4_Eile"></td>
+                    <td id="subgroup4_Alacrity"></td>
+                    <td id="subgroup4_Resistance"></td>
+                    <td id="subgroup4_Regeneration"></td>
+                    <td id="subgroup4_Might"></td>
+                    <td id="subgroup4_Fury"></td>
+                    <td id="subgroup4_Quickness"></td>
+                    <td id="subgroup4_Resolution"></td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td id="subgroup5_Stabilität"></td>
+                    <td id="subgroup5_Schutz"></td>
+                    <td id="subgroup5_Aegis"></td>
+                    <td id="subgroup5_Elan"></td>
+                    <td id="subgroup5_Eile"></td>
+                    <td id="subgroup5_Alacrity"></td>
+                    <td id="subgroup5_Resistance"></td>
+                    <td id="subgroup5_Regeneration"></td>
+                    <td id="subgroup5_Might"></td>
+                    <td id="subgroup5_Fury"></td>
+                    <td id="subgroup5_Quickness"></td>
+                    <td id="subgroup5_Resolution"></td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td id="subgroup6_Stabilität"></td>
+                    <td id="subgroup6_Schutz"></td>
+                    <td id="subgroup6_Aegis"></td>
+                    <td id="subgroup6_Elan"></td>
+                    <td id="subgroup6_Eile"></td>
+                    <td id="subgroup6_Alacrity"></td>
+                    <td id="subgroup6_Resistance"></td>
+                    <td id="subgroup6_Regeneration"></td>
+                    <td id="subgroup6_Might"></td>
+                    <td id="subgroup6_Fury"></td>
+                    <td id="subgroup6_Quickness"></td>
+                    <td id="subgroup6_Resolution"></td>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <td id="subgroup7_Stabilität"></td>
+                    <td id="subgroup7_Schutz"></td>
+                    <td id="subgroup7_Aegis"></td>
+                    <td id="subgroup7_Elan"></td>
+                    <td id="subgroup7_Eile"></td>
+                    <td id="subgroup7_Alacrity"></td>
+                    <td id="subgroup7_Resistance"></td>
+                    <td id="subgroup7_Regeneration"></td>
+                    <td id="subgroup7_Might"></td>
+                    <td id="subgroup7_Fury"></td>
+                    <td id="subgroup7_Quickness"></td>
+                    <td id="subgroup7_Resolution"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+            function handleDropdownChange(selectElement) {
+                var subgroupNumber = selectElement.closest('tr').rowIndex;
+                var selectedValue = selectElement.value;
+
+                // Setze 'X' in die entsprechende Zelle basierend auf der Auswahl
+                setCellValue(subgroupNumber, selectedValue);
+            }
+
+            function setCellValue(subgroupNumber, selectedValue) {
+                // Beispiel: Setze 'X' in die Stabilität-Zelle für Subgroup 1, wenn Heal Firebrand ausgewählt ist
+                if (subgroupNumber === 2 && selectedValue === 'Hvindi') {
+                    document.getElementById('subgroup2_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup2_Schutz').innerText = 'X';
+                    document.getElementById('subgroup2_Elan').innerText = 'X';
+                    document.getElementById('subgroup2_Resistance').innerText = 'X';
+                    document.getElementById('subgroup2_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup2_Eile').innerText = 'X';
+                    document.getElementById('subgroup2_Might').innerText = 'X';
+                    document.getElementById('subgroup2_Resolution').innerText = 'X';
+                }
+                if (subgroupNumber === 3 && selectedValue === 'Hvindi') {
+                    document.getElementById('subgroup3_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup3_Schutz').innerText = 'X';
+                    document.getElementById('subgroup3_Elan').innerText = 'X';
+                    document.getElementById('subgroup3_Resistance').innerText = 'X';
+                    document.getElementById('subgroup3_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup3_Eile').innerText = 'X';
+                    document.getElementById('subgroup3_Might').innerText = 'X';
+                    document.getElementById('subgroup3_Resolution').innerText = 'X';
+                }
+                if (subgroupNumber === 1 && selectedValue === 'Hvindi') {
+                    document.getElementById('subgroup1_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup1_Schutz').innerText = 'X';
+                    document.getElementById('subgroup1_Elan').innerText = 'X';
+                    document.getElementById('subgroup1_Resistance').innerText = 'X';
+                    document.getElementById('subgroup1_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup1_Eile').innerText = 'X';
+                    document.getElementById('subgroup1_Might').innerText = 'X';
+                    document.getElementById('subgroup1_Resolution').innerText = 'X';
+                }
+                if (subgroupNumber === 4 && selectedValue === 'Hvindi') {
+                    document.getElementById('subgroup4_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup4_Schutz').innerText = 'X';
+                    document.getElementById('subgroup4_Elan').innerText = 'X';
+                    document.getElementById('subgroup4_Resistance').innerText = 'X';
+                    document.getElementById('subgroup4_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup4_Eile').innerText = 'X';
+                    document.getElementById('subgroup4_Might').innerText = 'X';
+                    document.getElementById('subgroup4_Resolution').innerText = 'X';
+                }
+                if (subgroupNumber === 5 && selectedValue === 'Hvindi') {
+                    document.getElementById('subgroup5_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup5_Schutz').innerText = 'X';
+                    document.getElementById('subgroup5_Elan').innerText = 'X';
+                    document.getElementById('subgroup5_Resistance').innerText = 'X';
+                    document.getElementById('subgroup5_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup5_Eile').innerText = 'X';
+                    document.getElementById('subgroup5_Might').innerText = 'X';
+                    document.getElementById('subgroup5_Resolution').innerText = 'X';
+                }
+                if (subgroupNumber === 6 && selectedValue === 'Hvindi') {
+                    document.getElementById('subgroup6_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup6_Schutz').innerText = 'X';
+                    document.getElementById('subgroup6_Elan').innerText = 'X';
+                    document.getElementById('subgroup6_Resistance').innerText = 'X';
+                    document.getElementById('subgroup6_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup6_Eile').innerText = 'X';
+                    document.getElementById('subgroup6_Might').innerText = 'X';
+                    document.getElementById('subgroup6_Resolution').innerText = 'X';
+                }
+                if (subgroupNumber === 7 && selectedValue === 'Hvindi') {
+                    document.getElementById('subgroup7_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup7_Schutz').innerText = 'X';
+                    document.getElementById('subgroup7_Elan').innerText = 'X';
+                    document.getElementById('subgroup7_Resistance').innerText = 'X';
+                    document.getElementById('subgroup7_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup7_Eile').innerText = 'X';
+                    document.getElementById('subgroup7_Might').innerText = 'X';
+                    document.getElementById('subgroup7_Resolution').innerText = 'X';
+                }
+                if (subgroupNumber === 1 && selectedValue === 'Chrono') {
+                    document.getElementById('subgroup1_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup1_Schutz').innerText = 'X';
+                    document.getElementById('subgroup1_Elan').innerText = 'X';
+                    document.getElementById('subgroup1_Resistance').innerText = 'X';
+                    document.getElementById('subgroup1_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup1_Eile').innerText = 'X';
+                    document.getElementById('subgroup1_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup1_Might').innerText = 'X';
+                    document.getElementById('subgroup1_Resolution').innerText = 'X';
+                    document.getElementById('subgroup1_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 2 && selectedValue === 'Chrono') {
+                    document.getElementById('subgroup2_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup2_Schutz').innerText = 'X';
+                    document.getElementById('subgroup2_Elan').innerText = 'X';
+                    document.getElementById('subgroup2_Resistance').innerText = 'X';
+                    document.getElementById('subgroup2_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup2_Eile').innerText = 'X';
+                    document.getElementById('subgroup2_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup2_Might').innerText = 'X';
+                    document.getElementById('subgroup2_Resolution').innerText = 'X';
+                    document.getElementById('subgroup2_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 3 && selectedValue === 'Chrono') {
+                    document.getElementById('subgroup3_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup3_Schutz').innerText = 'X';
+                    document.getElementById('subgroup3_Elan').innerText = 'X';
+                    document.getElementById('subgroup3_Resistance').innerText = 'X';
+                    document.getElementById('subgroup3_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup3_Eile').innerText = 'X';
+                    document.getElementById('subgroup3_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup3_Might').innerText = 'X';
+                    document.getElementById('subgroup3_Resolution').innerText = 'X';
+                    document.getElementById('subgroup3_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 4 && selectedValue === 'Chrono') {
+                    document.getElementById('subgroup4_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup4_Schutz').innerText = 'X';
+                    document.getElementById('subgroup4_Elan').innerText = 'X';
+                    document.getElementById('subgroup4_Resistance').innerText = 'X';
+                    document.getElementById('subgroup4_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup4_Eile').innerText = 'X';
+                    document.getElementById('subgroup4_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup4_Might').innerText = 'X';
+                    document.getElementById('subgroup4_Resolution').innerText = 'X';
+                    document.getElementById('subgroup4_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 5 && selectedValue === 'Chrono') {
+                    document.getElementById('subgroup5_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup5_Schutz').innerText = 'X';
+                    document.getElementById('subgroup5_Elan').innerText = 'X';
+                    document.getElementById('subgroup5_Resistance').innerText = 'X';
+                    document.getElementById('subgroup5_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup5_Eile').innerText = 'X';
+                    document.getElementById('subgroup5_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup5_Might').innerText = 'X';
+                    document.getElementById('subgroup5_Resolution').innerText = 'X';
+                    document.getElementById('subgroup5_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 6 && selectedValue === 'Chrono') {
+                    document.getElementById('subgroup6_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup6_Schutz').innerText = 'X';
+                    document.getElementById('subgroup6_Elan').innerText = 'X';
+                    document.getElementById('subgroup6_Resistance').innerText = 'X';
+                    document.getElementById('subgroup6_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup6_Eile').innerText = 'X';
+                    document.getElementById('subgroup6_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup6_Might').innerText = 'X';
+                    document.getElementById('subgroup6_Resolution').innerText = 'X';
+                    document.getElementById('subgroup6_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 7 && selectedValue === 'Chrono') {
+                    document.getElementById('subgroup7_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup7_Schutz').innerText = 'X';
+                    document.getElementById('subgroup7_Elan').innerText = 'X';
+                    document.getElementById('subgroup7_Resistance').innerText = 'X';
+                    document.getElementById('subgroup7_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup7_Eile').innerText = 'X';
+                    document.getElementById('subgroup7_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup7_Might').innerText = 'X';
+                    document.getElementById('subgroup7_Resolution').innerText = 'X';
+                    document.getElementById('subgroup7_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 1 && selectedValue === 'HealFirebrand') {
+                    document.getElementById('subgroup1_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup1_Schutz').innerText = 'X';
+                    document.getElementById('subgroup1_Aegis').innerText = 'X';
+                    document.getElementById('subgroup1_Resistance').innerText = 'X';
+                    document.getElementById('subgroup1_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup1_Eile').innerText = 'X';
+                    document.getElementById('subgroup1_Might').innerText = 'X';
+                    document.getElementById('subgroup1_Resolution').innerText = 'X';
+                    document.getElementById('subgroup1_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 2 && selectedValue === 'HealFirebrand') {
+                    document.getElementById('subgroup2_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup2_Schutz').innerText = 'X';
+                    document.getElementById('subgroup2_Aegis').innerText = 'X';
+                    document.getElementById('subgroup2_Resistance').innerText = 'X';
+                    document.getElementById('subgroup2_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup2_Eile').innerText = 'X';
+                    document.getElementById('subgroup2_Might').innerText = 'X';
+                    document.getElementById('subgroup2_Resolution').innerText = 'X';
+                    document.getElementById('subgroup2_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 3 && selectedValue === 'HealFirebrand') {
+                    document.getElementById('subgroup3_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup3_Schutz').innerText = 'X';
+                    document.getElementById('subgroup3_Aegis').innerText = 'X';
+                    document.getElementById('subgroup3_Resistance').innerText = 'X';
+                    document.getElementById('subgroup3_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup3_Eile').innerText = 'X';
+                    document.getElementById('subgroup3_Might').innerText = 'X';
+                    document.getElementById('subgroup3_Resolution').innerText = 'X';
+                    document.getElementById('subgroup3_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 4 && selectedValue === 'HealFirebrand') {
+                    document.getElementById('subgroup4_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup4_Schutz').innerText = 'X';
+                    document.getElementById('subgroup4_Aegis').innerText = 'X';
+                    document.getElementById('subgroup4_Resistance').innerText = 'X';
+                    document.getElementById('subgroup4_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup4_Eile').innerText = 'X';
+                    document.getElementById('subgroup4_Might').innerText = 'X';
+                    document.getElementById('subgroup4_Resolution').innerText = 'X';
+                    document.getElementById('subgroup4_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 5 && selectedValue === 'HealFirebrand') {
+                    document.getElementById('subgroup5_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup5_Schutz').innerText = 'X';
+                    document.getElementById('subgroup5_Aegis').innerText = 'X';
+                    document.getElementById('subgroup5_Resistance').innerText = 'X';
+                    document.getElementById('subgroup5_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup5_Eile').innerText = 'X';
+                    document.getElementById('subgroup5_Might').innerText = 'X';
+                    document.getElementById('subgroup5_Resolution').innerText = 'X';
+                    document.getElementById('subgroup5_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 6 && selectedValue === 'HealFirebrand') {
+                    document.getElementById('subgroup6_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup6_Schutz').innerText = 'X';
+                    document.getElementById('subgroup6_Aegis').innerText = 'X';
+                    document.getElementById('subgroup6_Resistance').innerText = 'X';
+                    document.getElementById('subgroup6_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup6_Eile').innerText = 'X';
+                    document.getElementById('subgroup6_Might').innerText = 'X';
+                    document.getElementById('subgroup6_Resolution').innerText = 'X';
+                    document.getElementById('subgroup6_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 7 && selectedValue === 'HealFirebrand') {
+                    document.getElementById('subgroup7_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup7_Schutz').innerText = 'X';
+                    document.getElementById('subgroup7_Aegis').innerText = 'X';
+                    document.getElementById('subgroup7_Resistance').innerText = 'X';
+                    document.getElementById('subgroup7_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup7_Eile').innerText = 'X';
+                    document.getElementById('subgroup7_Might').innerText = 'X';
+                    document.getElementById('subgroup7_Resolution').innerText = 'X';
+                    document.getElementById('subgroup7_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 1 && selectedValue === 'Bersi') {
+                    document.getElementById('subgroup1_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup1_Resistance').innerText = 'X';
+                    document.getElementById('subgroup1_Eile').innerText = 'X';
+                    document.getElementById('subgroup1_Might').innerText = 'X';
+                    document.getElementById('subgroup1_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 2 && selectedValue === 'Bersi') {
+                    document.getElementById('subgroup2_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup2_Resistance').innerText = 'X';
+                    document.getElementById('subgroup2_Eile').innerText = 'X';
+                    document.getElementById('subgroup2_Might').innerText = 'X';
+                    document.getElementById('subgroup2_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 3 && selectedValue === 'Bersi') {
+                    document.getElementById('subgroup3_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup3_Resistance').innerText = 'X';
+                    document.getElementById('subgroup3_Eile').innerText = 'X';
+                    document.getElementById('subgroup3_Might').innerText = 'X';
+                    document.getElementById('subgroup3_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 4 && selectedValue === 'Bersi') {
+                    document.getElementById('subgroup4_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup4_Resistance').innerText = 'X';
+                    document.getElementById('subgroup4_Eile').innerText = 'X';
+                    document.getElementById('subgroup4_Might').innerText = 'X';
+                    document.getElementById('subgroup4_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 5 && selectedValue === 'Bersi') {
+                    document.getElementById('subgroup5_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup5_Resistance').innerText = 'X';
+                    document.getElementById('subgroup5_Eile').innerText = 'X';
+                    document.getElementById('subgroup5_Might').innerText = 'X';
+                    document.getElementById('subgroup5_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 6 && selectedValue === 'Bersi') {
+                    document.getElementById('subgroup6_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup6_Resistance').innerText = 'X';
+                    document.getElementById('subgroup6_Eile').innerText = 'X';
+                    document.getElementById('subgroup6_Might').innerText = 'X';
+                    document.getElementById('subgroup6_Quickness').innerText ='X';
+                }
+                if (subgroupNumber === 7 && selectedValue === 'Bersi') {
+                    document.getElementById('subgroup7_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup7_Resistance').innerText = 'X';
+                    document.getElementById('subgroup7_Eile').innerText = 'X';
+                    document.getElementById('subgroup7_Might').innerText = 'X'
+                    document.getElementById('subgroup7_Quickness').innerText ='X';;
+                }
+                if (subgroupNumber === 1 && selectedValue === 'Holo') {
+                    document.getElementById('subgroup1_Eile').innerText = 'X';
+                    document.getElementById('subgroup1_Might').innerText = 'X';
+                    document.getElementById('subgroup1_Quickness').innerText ='X';
+                    document.getElementById('subgroup1_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 2 && selectedValue === 'Holo') {
+                    document.getElementById('subgroup2_Eile').innerText = 'X';
+                    document.getElementById('subgroup2_Might').innerText = 'X';
+                    document.getElementById('subgroup2_Quickness').innerText ='X';
+                    document.getElementById('subgroup2_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 3 && selectedValue === 'Holo') {
+                    document.getElementById('subgroup3_Eile').innerText = 'X';
+                    document.getElementById('subgroup3_Might').innerText = 'X';
+                    document.getElementById('subgroup3_Quickness').innerText ='X';
+                    document.getElementById('subgroup3_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 4 && selectedValue === 'Holo') {
+                    document.getElementById('subgroup4_Eile').innerText = 'X';
+                    document.getElementById('subgroup4_Might').innerText = 'X';
+                    document.getElementById('subgroup4_Quickness').innerText ='X';
+                    document.getElementById('subgroup4_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 5 && selectedValue === 'Holo') {
+                    document.getElementById('subgroup5_Eile').innerText = 'X';
+                    document.getElementById('subgroup5_Might').innerText = 'X';
+                    document.getElementById('subgroup5_Quickness').innerText ='X';
+                    document.getElementById('subgroup5_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 6 && selectedValue === 'Holo') {
+                    document.getElementById('subgroup6_Eile').innerText = 'X';
+                    document.getElementById('subgroup6_Might').innerText = 'X';
+                    document.getElementById('subgroup6_Quickness').innerText ='X';
+                    document.getElementById('subgroup6_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 7 && selectedValue === 'Holo') {
+                    document.getElementById('subgroup7_Eile').innerText = 'X';
+                    document.getElementById('subgroup7_Might').innerText = 'X';
+                    document.getElementById('subgroup7_Quickness').innerText ='X';
+                    document.getElementById('subgroup7_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 1 && selectedValue === 'Hscourge') {
+                    document.getElementById('subgroup1_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup1_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup1_Eile').innerText = 'X';
+                    document.getElementById('subgroup1_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup1_Might').innerText = 'X';
+                    document.getElementById('subgroup1_Resolution').innerText = 'X';
+                    document.getElementById('subgroup1_Quickness').innerText ='X';
+                    document.getElementById('subgroup1_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 2 && selectedValue === 'Hscourge') {
+                    document.getElementById('subgroup2_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup2_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup2_Eile').innerText = 'X';
+                    document.getElementById('subgroup2_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup2_Might').innerText = 'X';
+                    document.getElementById('subgroup2_Resolution').innerText = 'X';
+                    document.getElementById('subgroup2_Quickness').innerText ='X';
+                    document.getElementById('subgroup2_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 3 && selectedValue === 'Hscourge') {
+                    document.getElementById('subgroup3_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup3_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup3_Eile').innerText = 'X';
+                    document.getElementById('subgroup3_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup3_Might').innerText = 'X';
+                    document.getElementById('subgroup3_Resolution').innerText = 'X';
+                    document.getElementById('subgroup3_Quickness').innerText ='X';
+                    document.getElementById('subgroup3_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 4 && selectedValue === 'Hscourge') {
+                    document.getElementById('subgroup4_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup4_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup4_Eile').innerText = 'X';
+                    document.getElementById('subgroup4_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup4_Might').innerText = 'X';
+                    document.getElementById('subgroup4_Resolution').innerText = 'X';
+                    document.getElementById('subgroup4_Quickness').innerText ='X';
+                    document.getElementById('subgroup4_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 5 && selectedValue === 'Hscourge') {
+                    document.getElementById('subgroup5_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup5_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup5_Eile').innerText = 'X';
+                    document.getElementById('subgroup5_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup5_Might').innerText = 'X';
+                    document.getElementById('subgroup5_Resolution').innerText = 'X';
+                    document.getElementById('subgroup5_Quickness').innerText ='X';
+                    document.getElementById('subgroup5_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 6 && selectedValue === 'Hscourge') {
+                    document.getElementById('subgroup6_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup6_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup6_Eile').innerText = 'X';
+                    document.getElementById('subgroup6_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup6_Might').innerText = 'X';
+                    document.getElementById('subgroup6_Resolution').innerText = 'X';
+                    document.getElementById('subgroup6_Quickness').innerText ='X';
+                    document.getElementById('subgroup6_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 7 && selectedValue === 'Hscourge') {
+                    document.getElementById('subgroup7_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup7_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup7_Eile').innerText = 'X';
+                    document.getElementById('subgroup7_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup7_Might').innerText = 'X';
+                    document.getElementById('subgroup7_Resolution').innerText = 'X';
+                    document.getElementById('subgroup7_Quickness').innerText ='X';
+                    document.getElementById('subgroup7_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 1 && selectedValue === 'Druid') {
+                    document.getElementById('subgroup1_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup1_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup1_Eile').innerText = 'X';
+                    document.getElementById('subgroup1_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup1_Might').innerText = 'X';
+                    document.getElementById('subgroup1_Schutz').innerText = 'X';
+                    document.getElementById('subgroup1_Resistance').innerText = 'X';
+                    document.getElementById('subgroup1_Resolution').innerText = 'X';
+                    document.getElementById('subgroup1_Quickness').innerText ='X';
+                    document.getElementById('subgroup1_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 2 && selectedValue === 'Druid') {
+                    document.getElementById('subgroup2_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup2_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup2_Eile').innerText = 'X';
+                    document.getElementById('subgroup2_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup2_Might').innerText = 'X';
+                    document.getElementById('subgroup2_Schutz').innerText = 'X';
+                    document.getElementById('subgroup2_Resistance').innerText = 'X';
+                    document.getElementById('subgroup2_Resolution').innerText = 'X';
+                    document.getElementById('subgroup2_Quickness').innerText ='X';
+                    document.getElementById('subgroup2_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 3 && selectedValue === 'Druid') {
+                    document.getElementById('subgroup3_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup3_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup3_Eile').innerText = 'X';
+                    document.getElementById('subgroup3_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup3_Might').innerText = 'X';
+                    document.getElementById('subgroup3_Schutz').innerText = 'X';
+                    document.getElementById('subgroup3_Resistance').innerText = 'X';
+                    document.getElementById('subgroup3_Resolution').innerText = 'X';
+                    document.getElementById('subgroup3_Quickness').innerText ='X';
+                    document.getElementById('subgroup3_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 4 && selectedValue === 'Druid') {
+                    document.getElementById('subgroup4_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup4_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup4_Eile').innerText = 'X';
+                    document.getElementById('subgroup4_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup4_Might').innerText = 'X';
+                    document.getElementById('subgroup4_Schutz').innerText = 'X';
+                    document.getElementById('subgroup4_Resistance').innerText = 'X';
+                    document.getElementById('subgroup4_Resolution').innerText = 'X';
+                    document.getElementById('subgroup4_Quickness').innerText ='X';
+                    document.getElementById('subgroup4_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 5 && selectedValue === 'Druid') {
+                    document.getElementById('subgroup5_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup5_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup5_Eile').innerText = 'X';
+                    document.getElementById('subgroup5_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup5_Might').innerText = 'X';
+                    document.getElementById('subgroup5_Schutz').innerText = 'X';
+                    document.getElementById('subgroup5_Resistance').innerText = 'X';
+                    document.getElementById('subgroup5_Resolution').innerText = 'X';
+                    document.getElementById('subgroup5_Quickness').innerText ='X';
+                    document.getElementById('subgroup5_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 6 && selectedValue === 'Druid') {
+                    document.getElementById('subgroup6_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup6_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup6_Eile').innerText = 'X';
+                    document.getElementById('subgroup6_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup6_Might').innerText = 'X';
+                    document.getElementById('subgroup6_Schutz').innerText = 'X';
+                    document.getElementById('subgroup6_Resistance').innerText = 'X';
+                    document.getElementById('subgroup6_Resolution').innerText = 'X';
+                    document.getElementById('subgroup6_Quickness').innerText ='X';
+                    document.getElementById('subgroup6_Fury').innerText = 'X';
+                }
+                if (subgroupNumber === 7 && selectedValue === 'Druid') {
+                    document.getElementById('subgroup7_Stabilität').innerText = 'X';
+                    document.getElementById('subgroup7_Regeneration').innerText = 'X';
+                    document.getElementById('subgroup7_Eile').innerText = 'X';
+                    document.getElementById('subgroup7_Alacrity').innerText = 'X';
+                    document.getElementById('subgroup7_Might').innerText = 'X';
+                    document.getElementById('subgroup7_Schutz').innerText = 'X';
+                    document.getElementById('subgroup7_Resistance').innerText = 'X';
+                    document.getElementById('subgroup7_Resolution').innerText = 'X';
+                    document.getElementById('subgroup7_Quickness').innerText ='X';
+                    document.getElementById('subgroup7_Fury').innerText = 'X';
+                }
+                // Hier kannst du weitere Bedingungen für andere Zellen und Auswahlwerte hinzufügen
+                // Zum Beispiel: if (subgroupNumber === 2 && selectedValue === 'Druid') { ... }
+            }
+        </script>
+    </body>
+</html>
